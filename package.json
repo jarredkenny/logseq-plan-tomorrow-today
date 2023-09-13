@@ -1,0 +1,23 @@
+{
+  "name": "plan-tomorrow-today",
+  "version": "0.0.1",
+  "description": "Move unfinished today's on-demand in Logseq",
+  "default": "dist/index.html",
+  "author": "Jarred Kenny <jarred.kenny@tracktile.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist/ && parcel build --no-source-maps index.html --public-url ./"
+  },
+  "logseq": {
+    "id": "plan-tomorrow-today",
+    "title": "Plan Tomorrow Today",
+    "icon": "icon.png"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "rimraf": "^5.0.1"
+  },
+  "dependencies": {
+    "@logseq/libs": "^0.0.15"
+  }
+}
